@@ -1,24 +1,54 @@
-# README
+# Rails Stupid Coaching
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Introduction
+Rails Stupid Coaching is an interactive web application built with Ruby on Rails. This project demonstrates handling user inputs and providing responses based on those inputs, emulating a conversation with a coach who gives 'stupid' advice.
 
-Things you may want to cover:
+## Features
+- Ask questions and receive responses from the coach.
+- Simple and humorous interaction model to keep users engaged.
+- Demonstrates the use of MVC architecture in a Rails application.
 
-* Ruby version
+## Technology Stack
+- Ruby on Rails
+- SQLite3 (for development)
+- Puma (web server)
 
-* System dependencies
+## Getting Started
 
-* Configuration
+### Prerequisites
+- Ruby
+- Rails
+- Bundler
 
-* Database creation
+### Installation
+Clone the repository to your local machine:
+```bash
+git clone https://github.com/shliamin/Rails-Stupid-Coaching.git
+cd Rails-Stupid-Coaching
+```
 
-* Database initialization
+Install all dependencies:
+```bash
+bundle install
+```
 
-* How to run the test suite
+### Running the app
+Start the Rails server:
+```bash
+rails server
+```
+Visit http://localhost:3000 in your web browser to start interacting with the application.
 
-* Services (job queues, cache servers, search engines, etc.)
+### Usage
+Simply enter a question in the provided text field and submit it to see how the 'stupid coach' responds. The coach has a few rules:
 
-* Deployment instructions
+- If you ask a question, the coach will answer sarcastically.
+- If you demand something, the coach will refuse.
+- If you say you are going to work, the coach will approve.
 
-* ...
+### Contributing
+Contributions are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+### Licence
+This project is available under the MIT License.
+
