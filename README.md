@@ -1,54 +1,55 @@
 # Rails Stupid Coaching
 
-## Introduction
-Rails Stupid Coaching is an interactive web application built with Ruby on Rails. This project demonstrates handling user inputs and providing responses based on those inputs, emulating a conversation with a coach who gives 'stupid' advice.
+### Efim Shliamin
 
-## Features
-- Ask questions and receive responses from the coach.
-- Simple and humorous interaction model to keep users engaged.
-- Demonstrates the use of MVC architecture in a Rails application.
-
-## Technology Stack
-- Ruby on Rails
-- SQLite3 (for development)
-- Puma (web server)
+Rails Stupid Coaching is a fun and interactive Rails application that simulates a conversation with a 'stupid' coach. Users can ask any question and receive humorous or straightforward advice.
 
 ## Getting Started
 
+Follow these instructions to get a copy of the project up and running on your local machine.
+
 ### Prerequisites
-- Ruby
-- Rails
-- Bundler
+
+- Ruby 3.1.0
+- Rails 6.1.0 or higher
+- SQLite3
 
 ### Installation
-Clone the repository to your local machine:
-```bash
-git clone https://github.com/shliamin/Rails-Stupid-Coaching.git
-cd Rails-Stupid-Coaching
-```
 
-Install all dependencies:
-```bash
-bundle install
-```
+1. Clone the repository:
 
-### Running the app
-Start the Rails server:
-```bash
-rails server
-```
-Visit http://localhost:3000 in your web browser to start interacting with the application.
+   ```bash
+   git clone https://github.com/shliamin/Rails-Stupid-Coaching.git
+   cd Rails-Stupid-Coaching
+   ```
 
-### Usage
-Simply enter a question in the provided text field and submit it to see how the 'stupid coach' responds. The coach has a few rules:
+2. Install the required Ruby version:
 
-- If you ask a question, the coach will answer sarcastically.
-- If you demand something, the coach will refuse.
-- If you say you are going to work, the coach will approve.
+    ```bash
+    rbenv install 3.1.0
+    rbenv local 3.1.0
+    ```
 
-### Contributing
-Contributions are welcome! For major changes, please open an issue first to discuss what you would like to change.
+3. Install the dependencies:
 
-### Licence
-This project is available under the MIT License.
+    ```bash
+    bundle install
+    ```
+
+### Running the Server
+
+To run the Rails server, use:
+    ```bash
+    rails server
+    ```
+
+Then open your browser and go to http://localhost:3000.
+
+### Routes
+
+The application has the following routes:
+
+/ask: Page where you can ask a question.
+/answer: Page where you receive an answer from the coach.
+
 
