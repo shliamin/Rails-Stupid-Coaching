@@ -3,12 +3,6 @@ default: &default
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
-  host: <%= ENV['DATABASE_HOST'] %>
-  port: <%= ENV.fetch("DATABASE_PORT", 5432) %>
-  database: <%= ENV['DATABASE_NAME'] %>
-  username: <%= ENV['DATABASE_USER'] %>
-  password: <%= ENV['DATABASE_PASSWORD'] %>
-  sslmode: <%= ENV['SSL_MODE'] %>
 
 development:
   <<: *default
@@ -18,3 +12,4 @@ test:
 
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
