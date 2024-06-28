@@ -12,7 +12,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 - Ruby 3.1.0
 - Rails 6.1.0 or higher
-- SQLite3
+- PostgreSQL
 
 ### Installation
 
@@ -43,7 +43,6 @@ To run the Rails server, use:
     rails server
     ```
 
-Then open your browser and go to http://localhost:3000.
 
 ### Routes
 
